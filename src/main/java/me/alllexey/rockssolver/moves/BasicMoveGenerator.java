@@ -1,11 +1,10 @@
 package me.alllexey.rockssolver.moves;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BasicMoveGenerator implements MoveGenerator {
 
-    private List<Move> moves = new ArrayList<>();
+    private List<Move> moves;
 
     public BasicMoveGenerator(List<Move> moves) {
         this.moves = moves;
