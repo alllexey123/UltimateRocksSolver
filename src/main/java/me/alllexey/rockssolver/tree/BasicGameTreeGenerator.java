@@ -42,7 +42,9 @@ public class BasicGameTreeGenerator implements GameTreeGenerator {
         List<Move> moves = rules.getMoveGenerator().getPossibleMoves(piles);
         for (Move move : moves) {
             GameTreeNode child = new GameTreeNode();
-            deeper(currentDepth + 1, child, move.make(piles));
+            int[] clone = piles.clone();
+            move.make(clone);
+            deeper(currentDepth + 1, child, clone);
             node.getNodes().add(child);
         }
     }

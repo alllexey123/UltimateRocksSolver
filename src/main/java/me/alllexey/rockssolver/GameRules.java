@@ -15,15 +15,12 @@ public class GameRules {
 
     private WinnerDeterminer winnerDeterminer;
 
-    private String type;
 
-
-    public GameRules(MoveGenerator moveGenerator, PileGenerator pileGenerator, GameEndChecker gameEndChecker, WinnerDeterminer winnerDeterminer, String type) {
+    public GameRules(MoveGenerator moveGenerator, PileGenerator pileGenerator, GameEndChecker gameEndChecker, WinnerDeterminer winnerDeterminer) {
         this.moveGenerator = moveGenerator;
         this.pileGenerator = pileGenerator;
         this.gameEndChecker = gameEndChecker;
         this.winnerDeterminer = winnerDeterminer;
-        this.type = type;
     }
 
     public GameRules() {
@@ -59,13 +56,5 @@ public class GameRules {
 
     public void setWinnerDeterminer(WinnerDeterminer winnerDeterminer) {
         this.winnerDeterminer = winnerDeterminer;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 }
