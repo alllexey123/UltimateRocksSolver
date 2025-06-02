@@ -1,5 +1,6 @@
 package me.alllexey.rockssolver.tree;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -15,6 +16,12 @@ public class GameTreeNode {
         this.isEnded = isEnded;
         this.winner = winner;
         this.nodes = nodes;
+    }
+
+    public GameTreeNode() {
+        this.isEnded = false;
+        this.winner = null;
+        this.nodes = new ArrayList<>();
     }
 
     public Stream<GameTreeNode> nodes() {

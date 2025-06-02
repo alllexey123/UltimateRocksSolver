@@ -2,5 +2,6 @@ package me.alllexey.rockssolver.tree;
 
 public interface GameTreeGenerator {
 
-    GameTreeNode generateGameTree();
+    GameTreeNode generateGameTree(int[] piles);
+
 }
