@@ -39,6 +39,4 @@ public class MulMove implements Move {
     public int getVal() {
         return val;
     }
-
-
 }
